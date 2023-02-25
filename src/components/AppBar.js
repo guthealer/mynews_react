@@ -16,6 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 import { Switch } from '@mui/material';
+import { MaterialUISwitch } from './DarkModeSwitch';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -218,7 +219,16 @@ function DrawerAppBar(props) {
           
           </Box>
 
-          <Switch  checked={props.theme}
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }}
+          >
+            KADAK NEWS
+          </Typography>
+
+
+                    <MaterialUISwitch  checked={props.theme}
                     color='success'
                     onChange={props.handleChange}/>
         </Toolbar>

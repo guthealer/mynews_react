@@ -16,7 +16,7 @@ export default function NewsCard(props) {
 
   const news_url = props.item.link
   return (
-    <Card sx={{ maxWidth: 345}}>
+    <Card sx={{ maxWidth:{xs:'100%',md:350},m:2}}>
       <CardMedia
         sx={{ height: 200}}
         image={imageurl}

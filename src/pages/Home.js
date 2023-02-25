@@ -66,8 +66,8 @@ console.log()
     return (
         <div>
             
-         
-            {loader?<Loader/>:undefined}
+            
+            {loader?<Loader />:undefined}
 
           
 
